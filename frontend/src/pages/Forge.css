@@ -1,0 +1,144 @@
+/* Main layout */
+.CifarApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for input controls */
+  .CifarContainer {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .CifarImage {
+    height: 100px;
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  /* Header */
+  .CifarHeader {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+  }
+  
+  /* Input controls */
+  .CifarControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .CifarLabel {
+    font-size: 16px;
+    color: #555; /* Medium gray text */
+  }
+  
+  .CifarInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Predict button */
+  .CifarButton {
+    padding: 12px 24px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .CifarButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Prediction text */
+  .Cifar-class {
+    font-size: 20px;
+    font-weight: bold;
+    color: #17a2b8; /* Teal text */
+  }
+  
+  .Cifar-confidence {
+    font-size: 18px;
+    color: #ff5733; /* Red-Orange text */
+  }
+  
+  /* Error message */
+  .error {
+    font-size: 16px;
+    color: #e74c3c; /* Red text */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .CifarContainer {
+      width: 90%;
+    }
+  }
+  
+  /* Styling for the Potato Disease App */
+  
+  .image-uploader {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .drop-area.dragging {
+    background-color: #f5f5f5;
+  }
+  
+  .uploaded-image {
+    width: 150px;
+    height: auto;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-input-label {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+  }
+  /* Prediction text */
+.PotatoDisease-class {
+  font-size: 20px;
+  font-weight: bold;
+  color: #17a2b8; /* Teal text */
+}
+
+.PotatoDisease-confidence {
+  font-size: 18px;
+  color: #ff5733; /* Red-Orange text */
+}
